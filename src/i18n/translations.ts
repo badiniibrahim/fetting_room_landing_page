@@ -1,8 +1,9 @@
 import type { Language } from '../types';
 
-export const translations: Record<Language, any> = {
+export const translations: Record<Language, unknown> = {
   fr: {
     header: {
+      title: 'Fitting Room',
       nav: {
         features: 'Fonctionnalités',
         howItWorks: 'Comment ça marche',
@@ -24,6 +25,29 @@ export const translations: Record<Language, any> = {
         youtube: 'Voir la démo sur YouTube',
       },
     },
+    stats: {
+      users: 'Utilisateurs actifs',
+      rating: 'Note moyenne',
+      tryOns: 'Essayages réalisés',
+    },
+    testimonials: {
+      title: 'Ce que disent nos utilisateurs',
+      testimonial1: {
+        name: 'Sophie Martin',
+        role: 'Styliste',
+        content: 'Fitting Room a complètement transformé ma façon de travailler. Je peux maintenant tester des combinaisons pour mes clientes en quelques secondes !',
+      },
+      testimonial2: {
+        name: 'Thomas Dubois',
+        role: 'Entrepreneur',
+        content: 'Enfin une app qui m\'aide à gérer mon dressing professionnel. Plus jamais de stress le matin, je planifie mes tenues à l\'avance.',
+      },
+      testimonial3: {
+        name: 'Emma Laurent',
+        role: 'Étudiante',
+        content: 'J\'adore pouvoir essayer virtuellement des vêtements avant d\'acheter. Ça m\'a fait économiser beaucoup d\'argent en retours !',
+      },
+    },
     howItWorks: {
       title: 'Comment fonctionne Fitting Room ?',
       steps: {
@@ -37,7 +61,7 @@ export const translations: Record<Language, any> = {
         },
         step3: {
           title: 'L\'IA ajuste la tenue',
-          description: 'Essayage virtuel via IA (Google Gemini)',
+          description: 'Essayage virtuel via IA',
         },
         step4: {
           title: 'Sauvegardez et planifiez vos looks',
@@ -101,22 +125,39 @@ export const translations: Record<Language, any> = {
       },
     },
     premium: {
-      title: 'Passez en mode premium',
-      description: 'Débloquez toutes les fonctionnalités avancées de Fitting Room avec un abonnement premium. Plus de crédits pour les essayages virtuels, plus de suggestions de tenues et des fonctionnalités exclusives.',
-      features: {
-        credits: 'Crédits pour les essayages virtuels',
-        subscriptions: 'Abonnements gérés via RevenueCat',
-        moreSuggestions: 'Plus de suggestions de tenues',
-        advanced: 'Fonctionnalités avancées',
-      },
+      title: 'Achetez des crédits pour vos essayages',
+      description: 'Les essayages virtuels nécessitent des crédits. Achetez des packs de crédits selon vos besoins et utilisez-les quand vous voulez. Gestion des achats via RevenueCat.',
       free: 'Gratuit',
-      premium: 'Premium',
+      credits: 'Crédits',
+      pack1: {
+        credits: '10 crédits',
+        price: '4,99 €',
+        description: 'Idéal pour tester l\'application',
+      },
+      pack2: {
+        credits: '50 crédits',
+        price: '19,99 €',
+        description: 'Parfait pour une utilisation régulière',
+      },
+      pack3: {
+        credits: '100 crédits',
+        price: '34,99 €',
+        description: 'Le meilleur rapport qualité-prix',
+      },
+      features: {
+        tryOn: 'Essayages virtuels illimités',
+        closet: 'Gestion de placard complète',
+        suggestions: 'Suggestions de tenues IA',
+        planner: 'Planificateur de looks',
+      },
+      buy: 'Acheter',
+      popular: 'Populaire',
     },
     security: {
       title: 'Vos données, votre style, en sécurité',
-      description: 'Nous prenons la sécurité de vos données au sérieux. Authentification sécurisée via Firebase Auth, Google et Apple. Vos photos restent privées et votre historique est sauvegardé en toute sécurité.',
+      description: 'Nous prenons la sécurité de vos données au sérieux. Authentification sécurisée via , Google et Apple. Vos photos restent privées et votre historique est sauvegardé en toute sécurité.',
       features: {
-        auth: 'Authentification Firebase Auth, Google et Apple',
+        auth: 'Authentification  Google et Apple',
         privacy: 'Confidentialité des photos',
         history: 'Historique des essayages et sauvegarde des tenues favorites',
       },
@@ -137,9 +178,16 @@ export const translations: Record<Language, any> = {
         youtube: 'Voir la démo sur YouTube',
       },
     },
+    trust: {
+      secure: 'Sécurisé',
+      rated: '4.8/5 étoiles',
+      users: '10K+ utilisateurs',
+      gdpr: 'Conforme RGPD',
+    },
   },
   en: {
     header: {
+      title: 'Fitting Room',
       nav: {
         features: 'Features',
         howItWorks: 'How it works',
@@ -161,6 +209,29 @@ export const translations: Record<Language, any> = {
         youtube: 'Watch demo on YouTube',
       },
     },
+    stats: {
+      users: 'Active users',
+      rating: 'Average rating',
+      tryOns: 'Try-ons completed',
+    },
+    testimonials: {
+      title: 'What our users say',
+      testimonial1: {
+        name: 'Sophie Martin',
+        role: 'Stylist',
+        content: 'Fitting Room has completely transformed the way I work. I can now test combinations for my clients in seconds!',
+      },
+      testimonial2: {
+        name: 'Thomas Dubois',
+        role: 'Entrepreneur',
+        content: 'Finally an app that helps me manage my professional wardrobe. No more morning stress, I plan my outfits in advance.',
+      },
+      testimonial3: {
+        name: 'Emma Laurent',
+        role: 'Student',
+        content: 'I love being able to try on clothes virtually before buying. It has saved me a lot of money on returns!',
+      },
+    },
     howItWorks: {
       title: 'How does Fitting Room work?',
       steps: {
@@ -174,7 +245,7 @@ export const translations: Record<Language, any> = {
         },
         step3: {
           title: 'AI adjusts the outfit',
-          description: 'Virtual try-on via AI (Google Gemini)',
+          description: 'Virtual try-on via AI',
         },
         step4: {
           title: 'Save and plan your looks',
@@ -238,22 +309,39 @@ export const translations: Record<Language, any> = {
       },
     },
     premium: {
-      title: 'Go premium',
-      description: 'Unlock all advanced features of Fitting Room with a premium subscription. More credits for virtual try-ons, more outfit suggestions and exclusive features.',
-      features: {
-        credits: 'Credits for virtual try-ons',
-        subscriptions: 'Subscriptions managed via RevenueCat',
-        moreSuggestions: 'More outfit suggestions',
-        advanced: 'Advanced features',
-      },
+      title: 'Buy credits for your try-ons',
+      description: 'Virtual try-ons require credits. Purchase credit packs according to your needs and use them whenever you want. Purchase management via RevenueCat.',
       free: 'Free',
-      premium: 'Premium',
+      credits: 'Credits',
+      pack1: {
+        credits: '10 credits',
+        price: '$4.99',
+        description: 'Perfect for testing the app',
+      },
+      pack2: {
+        credits: '50 credits',
+        price: '$19.99',
+        description: 'Great for regular use',
+      },
+      pack3: {
+        credits: '100 credits',
+        price: '$34.99',
+        description: 'Best value for money',
+      },
+      features: {
+        tryOn: 'Unlimited virtual try-ons',
+        closet: 'Complete closet management',
+        suggestions: 'AI outfit suggestions',
+        planner: 'Outfit planner',
+      },
+      buy: 'Buy',
+      popular: 'Popular',
     },
     security: {
       title: 'Your data, your style, secure',
-      description: 'We take the security of your data seriously. Secure authentication via Firebase Auth, Google and Apple. Your photos remain private and your history is securely saved.',
+      description: 'We take the security of your data seriously. Secure authentication via  Google and Apple. Your photos remain private and your history is securely saved.',
       features: {
-        auth: 'Firebase Auth, Google and Apple authentication',
+        auth: 'Auth Google and Apple authentication',
         privacy: 'Photo privacy',
         history: 'Try-on history and favorite outfits saved',
       },
@@ -273,6 +361,12 @@ export const translations: Record<Language, any> = {
         appStore: 'Download on App Store',
         youtube: 'Watch demo on YouTube',
       },
+    },
+    trust: {
+      secure: 'Secure',
+      rated: '4.8/5 stars',
+      users: '10K+ users',
+      gdpr: 'GDPR compliant',
     },
   },
 } as const;

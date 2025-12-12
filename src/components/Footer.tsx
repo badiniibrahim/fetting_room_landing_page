@@ -16,17 +16,11 @@ export function Footer() {
               <a href="#premium" className="footer-link">Premium</a>
               <a href="#gallery" className="footer-link">Galerie</a>
             </div>
-            <div className="footer-column">
-              <h4 className="footer-title">Support</h4>
-              <a href="#" className="footer-link">Aide</a>
-              <a href="#" className="footer-link">Contact</a>
-              <a href="#" className="footer-link">FAQ</a>
-            </div>
+           
             <div className="footer-column">
               <h4 className="footer-title">Légal</h4>
-              <a href="#" className="footer-link">Confidentialité</a>
-              <a href="#" className="footer-link">Conditions</a>
-              <a href="#" className="footer-link">CGU</a>
+              <a href="https://sites.google.com/view/aifittingroom/privacy-policy?authuser=2" target="_blank" rel="noopener noreferrer" className="footer-link">Confidentialité</a>
+              <a href="https://sites.google.com/view/aifittingroom/terms-conditions?authuser=2" target="_blank" rel="noopener noreferrer" className="footer-link">Conditions</a>
             </div>
           </div>
         </div>

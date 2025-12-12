@@ -13,9 +13,10 @@ export function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-          <span className="logo-text">Fitting Room</span>
-        </div>
+        <a href="#" className="logo">
+          <img src="/logo.png" alt="Fitting Room" className="logo-image" />
+          <span className="logo-text">{t('header.title')}</span>
+        </a>
         <nav className="nav">
           <a href="#features" className="nav-link">
             {t('header.nav.features')}

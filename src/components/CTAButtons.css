@@ -27,7 +27,7 @@
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  background: #2563EB;
   color: white;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
@@ -52,7 +52,7 @@
 }
 
 .cta-youtube {
-  background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+  background: #059669;
   color: white;
   box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
 }

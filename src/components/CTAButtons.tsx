@@ -7,7 +7,7 @@ export function CTAButtons() {
   return (
     <div className="cta-buttons">
       <a
-        href="#"
+        href="https://play.google.com/store/apps/details?id=com.fittingroom.app"
         className="cta-button cta-primary"
         target="_blank"
         rel="noopener noreferrer"
@@ -18,7 +18,7 @@ export function CTAButtons() {
         {t('hero.cta.googlePlay')}
       </a>
       <a
-        href="#"
+        href="https://apps.apple.com/app/fitting-room/id123456789"
         className="cta-button cta-secondary"
         target="_blank"
         rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export function CTAButtons() {
         {t('hero.cta.appStore')}
       </a>
       <a
-        href="#"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         className="cta-button cta-youtube"
         target="_blank"
         rel="noopener noreferrer"
