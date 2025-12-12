@@ -1,0 +1,114 @@
+.closet-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.closet-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.closet-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.closet-feature {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.closet-feature h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0 0 0.25rem 0;
+}
+
+.closet-feature p {
+  font-size: 0.95rem;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.closet-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid var(--category-color);
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--category-color);
+  transition: all 0.3s ease;
+}
+
+.category-tag:hover {
+  background: var(--category-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  font-size: 1.25rem;
+}
+
+.category-name {
+  font-size: 0.95rem;
+}
+
+.closet-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 968px) {
+  .closet-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .closet-visual {
+    order: 1;
+  }
+
+  .closet-text {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .closet-features {
+    gap: 1.25rem;
+  }
+
+  .closet-categories {
+    gap: 0.75rem;
+  }
+
+  .category-tag {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+

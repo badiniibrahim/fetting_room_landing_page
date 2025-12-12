@@ -1,0 +1,74 @@
+.ai-stylist-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ai-stylist-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai-stylist-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ai-feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.ai-feature-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+  border-left-color: #2563EB;
+}
+
+.ai-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ai-feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0 0 0.5rem 0;
+}
+
+.ai-feature-description {
+  font-size: 0.95rem;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .ai-stylist-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .ai-stylist-visual {
+    order: 1;
+  }
+
+  .ai-stylist-features {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-feature-card {
+    padding: 1.5rem;
+  }
+}
+
